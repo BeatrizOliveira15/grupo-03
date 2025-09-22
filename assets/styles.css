@@ -1,18 +1,22 @@
-:root {
-    --fundo: white;
-    --borda: gray;
-    --fonte: black;
-    --detalhes: rgb(255, 136, 0);
-    --títulos: rgb(255, 179, 0);
-    --subtítulos: orange;
-    --fundoneutro: rgb(255, 210, 126);
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fundo:white;
+    --borda:rgb(128, 128, 128);
+    --fonte: black;
+    --botao:rgb(255, 136, 0);
+    --títulos:rgb(255, 179, 0);
+    --subtítulos: rgb(255, 165, 0);
+    --fundoneutro:rgb(255, 210, 126);
+ 
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
+
+
 
 
 /*bea*/
@@ -199,11 +203,103 @@
 
 
 
-
-
 /*isadora*/
 
+.ISADORA {
 
+    .card1 {
+        padding: 60px;
+        background-color: var(--fundo);
+    }
+    .container {
+        width: 900px;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        box-shadow: 3px 9px 75px 21px var(--borda);
+        -webkit-box-shadow: 3px 9px 75px 21px var(--borda);
+        -moz-box-shadow: 3px 9px 75px 21px var(--borda);
+    }
+    
+    .texto {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+        h1 {
+            color:black;
+            font-weight: bold;
+            font-size: 40px;
+ 
+        }
+        
+        p {
+            font-size:16px;
+            margin-top: 15px;
+            text-align: justify;
+        }
+        
+    }
+    
+    
+    
+    .imagem {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        
+    }
+    
+    span {
+        color: rgb(255, 208, 0);
+        font-weight: bold;
+    }
+    
+    .botao {
+        margin: 60px;
+        padding: 20px 60px;
+        background-color: var(--botao);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        
+        box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        
+    }
+    
+    .Cardapio {
+        text-align: center;
+        color:black;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+ 
+    .botao:hover{
+        background-color:var(--fundoneutro) ;
+    }
+    
+    
+    .card2{
+        padding: 5%;
+        background-color: var(--fundo);
+    }
+    
+    .card3{
+        padding: 5%;
+        background-color: var(--fundo);
+    }   
+    
+  
+}
+    
 
 
 
