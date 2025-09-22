@@ -730,6 +730,28 @@ body{
     border-radius: 5rem;
     color: white;
     text-align: center;
+
+}
+ 
+.bolinha img{
+    margin-top: 20%;
+}
+ 
+.imagens {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15rem;
+    width: 12rem;
+    gap: 15px;
+    /* height: 12rem; */
+    display: flex;
+    justify-content: space-between;
+}
+.imagens img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10rem;
+
 }
  
 .bolinha img{
