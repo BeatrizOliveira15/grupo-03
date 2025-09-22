@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --fundo:white;
-    --borda:gray;
-    --fonte: black;
-    --detalhes:rgb(255, 136, 0);
-    --títulos:rgb(255, 179, 0);
-    --subtítulos: orange;
-}
+
+
 
 
 
@@ -15,6 +9,17 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: white;
+}
+
+
+
 
 
 /*bea pag 1*/
@@ -770,6 +775,10 @@
 
 .ISADORA {
 
+    body{
+    background-color: white;
+}
+
     /* Card 1 = correponde as configurações dos blocos de imagem e texto (cartões) */
 
     .card1 {
@@ -830,7 +839,7 @@
     }
     
 /* configurações de todos os botões */
-    .botao {
+    .botao1 {
         margin: 60px;
         padding: 20px 60px;
         background-color: var(--botao);
@@ -838,7 +847,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        
+        color: var(--detalhes);
         box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
@@ -846,6 +855,7 @@
         
     }
     
+    /* Configurações de cardápio (botão)*/
     .Cardapio {
         text-align: center;
         color:black;
@@ -854,18 +864,19 @@
         transition: all 0.3s ease;
         
     }
- 
-    .botao:hover{
+ /* Configurações de botão, animações e efeitos de cor*/
+    .botao1:hover{
         background-color:var(--fundoneutro) ;
         transition: all 0.3s ease;
     }
     
-    
+     /* Card 2 = correponde as configurações dos blocos de imagem e texto (cartões) */
     .card2{
         padding: 5%;
         background-color: var(--fundo);
     }
     
+     /* Card 3 = correponde as configurações dos blocos de imagem e texto (cartões) */
     .card3{
         padding: 5%;
         background-color: var(--fundo);
@@ -960,12 +971,17 @@ input{
 }
 
 
-bUtton{
+button {
     width: 100px;
     height: 40px;
     border-radius: 5px;
+
+    border: none;
+    position: relative;
+
     border: 0px;
    
+
     bottom: 50px;
     margin-left: 10px;
     background-color: orange;
