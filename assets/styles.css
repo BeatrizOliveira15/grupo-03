@@ -14,9 +14,7 @@
     padding: 0;
 }
 
-body{
-    background-color: antiquewhite;
-}
+
 
 
 
@@ -68,19 +66,29 @@ body{
     padding-left: 57%;
     padding-top: 4%;
     color: var(--títulos);
+
+    display: flex;
+    gap: 10px;
+
+    /* background-color: aqua; */
+}
+.visao h3{
+    display: flex;
+    padding-top: 0.75rem;
 }
 
 .bolinha1 {
     background-color: var(--títulos);
-    width: 70%;
-    height: 15%;
-    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
     color: white;
     text-align: center;
-    margin-left: 130%;
-    align-items: start;
 }
+.bolinha1 img{
+    margin-top: 20%;
 }
+    }
 
 
 
