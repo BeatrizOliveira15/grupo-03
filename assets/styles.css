@@ -15,10 +15,10 @@
 }
 
 
-/*bea*/
+/*bea pag 1*/
 
 .bea {
-
+/*HEADER*/
     header {
         margin-right: 5%;
         margin-left: 5%;
@@ -63,6 +63,7 @@
         }
     }
 
+    /*MAIN*/
     .main {
         padding-left: 6%;
         padding-top: 6%;
@@ -91,6 +92,7 @@
         font-size: 450%
     }
 
+    /*WHITE BOX*/
     .box {
         padding: 3%;
         margin-top: 5%;
@@ -134,7 +136,155 @@
         }
     }
 
-    
+    /*CARDS*/
+    .cards {
+        display: flex !important;
+        padding: 3%;
+        position: relative;
+
+        h4 {
+            margin-top: 1%;
+            font-size: 130%;
+            margin-bottom: 2%;
+        }
+
+        .salad {
+            margin-left: 6%;
+            img {
+                border-radius: 10%;
+            }
+
+            .sob1 {
+                background-color: #feb111;
+                width: 8%;
+                border-radius: 0px 15px 0px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin-top: -86px;
+
+
+                .text {
+                    flex-direction: column;
+                    color: white;
+
+                }
+            }
+
+            .days1 {
+                background-color: #ffe1c8;
+                color: #de7837;
+                width: 40%;
+                padding: 2%;
+                font-size: larger;
+                border-radius: 7px;
+            }
+        }
+
+        .pasta {
+            img {
+                border-radius: 10%;
+            }
+
+            .sob2 {
+                background-color: #feb111;
+                width: 8%;
+                border-radius: 0px 15px 0px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin-top: -86px;
+
+
+                .text {
+                    flex-direction: column;
+                    color: white;
+
+                }
+            }
+
+            .days2 {
+                background-color: #ffe1c8;
+                color: #de7837;
+                width: 40%;
+                padding: 2%;
+                font-size: larger;
+                border-radius: 7px;
+            }
+        }
+
+        .vegetables {
+            img {
+                border-radius: 10%;
+            }
+
+            .sob3 {
+                background-color: #feb111;
+                width: 8%;
+                border-radius: 0px 15px 0px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin-top: -86px;
+
+
+                .text {
+                    flex-direction: column;
+                    color: white;
+
+                }
+            }
+
+            .days3 {
+                background-color: #ffe1c8;
+                color: #de7837;
+                width: 30%;
+                padding: 1.5%;
+                font-size: larger;
+                border-radius: 7px;
+            }
+        }
+
+        .soup {
+            margin-left: -9%;
+            margin-right: 6%;
+            img {
+                border-radius: 10%;
+            }
+
+            .sob4 {
+                background-color: #feb111;
+                width: 8%;
+                border-radius: 0px 15px 0px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                margin-top: -86px;
+
+
+                .text {
+                    flex-direction: column;
+                    color: white;
+
+                }
+            }
+
+            .days4 {
+                background-color: #ffe1c8;
+                color: #de7837;
+                width: 45%;
+                padding: 2.5%;
+                font-size: larger;
+                border-radius: 7px;
+            }
+        }
+
+
+    }
 }
 
 
