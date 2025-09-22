@@ -148,17 +148,6 @@ body{
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*pietra*/
 
 .pietra{
@@ -366,19 +355,7 @@ body{
 }
 }
 
-
-
-
-
-
-
 /*bia*/
-
-
-
-
-
-
 .bia {
     background-color: rgb(251, 251, 234);
     display: flex;
@@ -411,9 +388,6 @@ body{
         align-items: start;
     }
 }
-
-
-
 
 /*isadora*/
 
@@ -511,15 +485,7 @@ body{
     
   
 }
-    
-
-
-
-
-
-
-
-
+ 
 /*marcela*/
 
 .marcela{
@@ -545,17 +511,18 @@ body{
 
 
 p{
-    color: rgba(255, 255, 255, 0.779);
+    color: var(--borda);
     display: flex;
     justify-content: space-around;
 }
 
 h2{
-    color: rgb(209, 209, 209);
+    color: var(--borda);
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-direction: column;
+    font-size: 20px;
     
 }
 .titulo-rodape{
@@ -578,31 +545,38 @@ h2{
     }
     
 }
-
-.titulo-segundo { 
+.tres{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    .titulo-segundo h2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .segundo{
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        
-    }
-    
-    
-    hr{
-        width: 90%;
-        opacity: 0.3;
-    }
-    
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    columns: 3;
+    width: 50%;
+    height: 200px;
+
 }
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 1000px;
+    background-color: rgb(63, 63, 63);
+
 }
 
+
+bUtton{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    margin-left: 1350px;
+}
