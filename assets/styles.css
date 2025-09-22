@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --fundo:white;
@@ -15,14 +16,130 @@
     padding: 0;
 }
 
-body{
-    background-color: antiquewhite;
-}
-
 
 
 
 /*bea*/
+
+.bea {
+
+    header {
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 0.3%;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            align-items: center;
+            display: flex;
+
+            h2 {
+                color: orange;
+            }
+
+            h3 {
+                color: rgb(247, 224, 97);
+            }
+        }
+
+        .middle {
+            align-items: center;
+            display: flex;
+            font-size: 90%;
+        }
+
+        .end {
+            align-items: center;
+            display: flex;
+            font-size: 90%;
+        }
+
+        .login {
+            padding: 0.8%;
+            align-items: center;
+            display: flex;
+            font-size: 90%;
+            color: rgb(247, 224, 97);
+            box-shadow: 10%;
+            box-shadow: 1px 5px 5px rgb(247, 224, 97);
+            border-radius: 5px;
+        }
+    }
+
+    .main {
+        padding-left: 6%;
+        padding-top: 6%;
+        background-color: #fcc70f;
+        width: 195.7vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .all {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .yellow {
+        width: 300px;
+        height: 300px;
+        background: yellow;
+        border-radius: 10rem;
+        box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        color: white;
+        font-size: 450%
+    }
+
+    .box {
+        padding: 3%;
+        margin-top: 5%;
+        background-color: white;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+
+
+
+        .top {
+            display: flex;
+            margin-bottom: 6%;
+            gap: 2%;
+        }
+
+        .bottom {
+            display: flex;
+            gap: 5%
+        }
+
+        .boxadress {
+            background-color: rgb(231, 229, 229);
+            color: #bdbdbd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+        }
+
+        .boxfind {
+            display: flex;
+            align-items: center;
+            background-color: #f96325;
+            color: white;
+            border-radius: 5px;
+            width: 30%;
+            padding: 1.5%
+        }
+    }
+
+    
+}
 
 
 
@@ -50,6 +167,38 @@ body{
 
 
 
+.bia {
+    background-color: rgb(251, 251, 234);
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+    .search {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 9%;
+        padding-top: 3%;
+    }
+
+    .visao {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 57%;
+        padding-top: 4%;
+        color: var(--títulos);
+    }
+
+    .bolinha1 {
+        background-color: var(--títulos);
+        width: 70%;
+        height: 15%;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        margin-left: 130%;
+        align-items: start;
+    }
+}
 
 
 
@@ -151,10 +300,10 @@ body{
   
 }
     
-    
-    
-    /*marcela*/
 
 
 
 
+
+
+/*marcela*/
