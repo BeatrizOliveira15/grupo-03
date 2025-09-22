@@ -563,20 +563,20 @@ input{
     margin-top: 20px;
     padding: 10px;
     margin-left: 1000px;
+    background-color: rgb(63, 63, 63);
 
 }
+
+
 bUtton{
     width: 100px;
     height: 40px;
     border-radius: 5px;
     border: 0px;
-    margin-top: 20px;
+    position: relative;
+    bottom: 50px;
     margin-left: 10px;
     background-color: orange;
     color: white;
-     margin-left: 1350px;
-     
-
-    
+    margin-left: 1350px;
 }
-
