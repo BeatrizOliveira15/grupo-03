@@ -211,10 +211,13 @@ body{
 
 .ISADORA {
 
+    /* Card 1 = correponde as configurações dos blocos de imagem e texto (cartões) */
+
     .card1 {
         padding: 60px;
         background-color: var(--fundo);
     }
+    /* a div mãe, que contém as configurações básicas de todos os outros cards (container = contém) */
     .container {
         width: 900px;
         height: 400px;
@@ -223,8 +226,10 @@ body{
         box-shadow: 3px 9px 75px 21px var(--borda);
         -webkit-box-shadow: 3px 9px 75px 21px var(--borda);
         -moz-box-shadow: 3px 9px 75px 21px var(--borda);
+        
     }
     
+    /* O texto se adapta ao container, comfigurações de texto para as escritas h1, p e geral.  */
     .texto {
         width: 50%;
         height: 100%;
@@ -249,7 +254,7 @@ body{
         
     }
     
-    
+    /* configurações de todas as imagens dos cards */
     
     .imagem {
         width: 50%;
@@ -258,11 +263,14 @@ body{
         
     }
     
+
+    /* utilizado para deixar textos isolados de outra cor */
     span {
         color: rgb(255, 208, 0);
         font-weight: bold;
     }
     
+/* configurações de todos os botões */
     .botao {
         margin: 60px;
         padding: 20px 60px;
@@ -276,6 +284,7 @@ body{
         -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         
+        
     }
     
     .Cardapio {
@@ -283,11 +292,13 @@ body{
         color:black;
         font-weight: bold;
         cursor: pointer;
+        transition: all 0.3s ease;
         
     }
  
     .botao:hover{
         background-color:var(--fundoneutro) ;
+        transition: all 0.3s ease;
     }
     
     
