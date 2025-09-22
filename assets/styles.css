@@ -60,6 +60,7 @@ body{
 
     .card1 {
         padding: 60px;
+        background-color: var(--fundo);
     }
     .container {
         width: 900px;
@@ -139,10 +140,12 @@ body{
     
     .card2{
         padding: 5%;
+        background-color: var(--fundo);
     }
     
     .card3{
         padding: 5%;
+        background-color: var(--fundo);
     }   
     
   
