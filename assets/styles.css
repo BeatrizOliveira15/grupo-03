@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(255, 255, 255);
+}
+
 
 
 body{
@@ -147,17 +151,6 @@ body{
 
     
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*pietra*/
 
@@ -550,13 +543,8 @@ body{
 
 
 
+
 /*bia*/
-
-
-
-
-
-
 .bia {
     background-color: rgb(251, 251, 234);
     display: flex;
@@ -590,17 +578,17 @@ body{
     }
 }
 
-
-
-
 /*isadora*/
 
 .ISADORA {
+
+    /* Card 1 = correponde as configurações dos blocos de imagem e texto (cartões) */
 
     .card1 {
         padding: 60px;
         background-color: var(--fundo);
     }
+    /* a div mãe, que contém as configurações básicas de todos os outros cards (container = contém) */
     .container {
         width: 900px;
         height: 400px;
@@ -609,8 +597,10 @@ body{
         box-shadow: 3px 9px 75px 21px var(--borda);
         -webkit-box-shadow: 3px 9px 75px 21px var(--borda);
         -moz-box-shadow: 3px 9px 75px 21px var(--borda);
+        
     }
     
+    /* O texto se adapta ao container, comfigurações de texto para as escritas h1, p e geral.  */
     .texto {
         width: 50%;
         height: 100%;
@@ -635,7 +625,7 @@ body{
         
     }
     
-    
+    /* configurações de todas as imagens dos cards */
     
     .imagem {
         width: 50%;
@@ -644,11 +634,14 @@ body{
         
     }
     
+
+    /* utilizado para deixar textos isolados de outra cor */
     span {
         color: rgb(255, 208, 0);
         font-weight: bold;
     }
     
+/* configurações de todos os botões */
     .botao {
         margin: 60px;
         padding: 20px 60px;
@@ -662,6 +655,7 @@ body{
         -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         
+        
     }
     
     .Cardapio {
@@ -669,11 +663,13 @@ body{
         color:black;
         font-weight: bold;
         cursor: pointer;
+        transition: all 0.3s ease;
         
     }
  
     .botao:hover{
         background-color:var(--fundoneutro) ;
+        transition: all 0.3s ease;
     }
     
     
@@ -689,15 +685,7 @@ body{
     
   
 }
-    
-
-
-
-
-
-
-
-
+ 
 /*marcela*/
 
 .marcela{
@@ -723,17 +711,18 @@ body{
 
 
 p{
-    color: rgba(255, 255, 255, 0.779);
+    color: var(--borda);
     display: flex;
     justify-content: space-around;
 }
 
 h2{
-    color: rgb(209, 209, 209);
+    color: var(--borda);
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-direction: column;
+    font-size: 20px;
     
 }
 .titulo-rodape{
@@ -756,31 +745,39 @@ h2{
     }
     
 }
-
-.titulo-segundo { 
+.tres{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    .titulo-segundo h2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .segundo{
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-        
-    }
-    
-    
-    hr{
-        width: 90%;
-        opacity: 0.3;
-    }
-    
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    columns: 3;
+    width: 50%;
+    height: 200px;
+
 }
 
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 1000px;
+    background-color: rgb(63, 63, 63);
+
+}
+
+
+bUtton{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    margin-left: 1350px;
 }
