@@ -6,7 +6,7 @@
     --detalhes:rgb(255, 136, 0);
     --títulos:rgb(255, 179, 0);
     --subtítulos: orange;
-
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -928,4 +928,5 @@ bUtton{
     background-color: orange;
     color: white;
     margin-left: 1350px;
+}
 }
