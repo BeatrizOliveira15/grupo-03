@@ -17,9 +17,11 @@
 }
 
 
+
 body{
     background-color: white;
 }
+
 
 
 
@@ -309,6 +311,37 @@ body{
     
 }
 
+
+.visao {
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 57%;
+    padding-top: 4%;
+    color: var(--títulos);
+
+    display: flex;
+    gap: 10px;
+
+    /* background-color: aqua; */
+}
+.visao h3{
+    display: flex;
+    padding-top: 0.75rem;
+}
+
+.bolinha1 {
+    background-color: var(--títulos);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    color: white;
+    text-align: center;
+}
+.bolinha1 img{
+    margin-top: 20%;
+}
+    }
+
 .btn-moderno:hover {
     background-color: var(--subtítulos);
     transform: scale(1.05);
@@ -340,6 +373,7 @@ body{
 
 
 /*bia*/
+
 
 
 
