@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --fundo: #fffbe6;
@@ -53,6 +57,7 @@ body {
         .title {
             align-items: center;
             display: flex;
+            font-family: "Alan Sans", sans-serif;
 
             h2 {
                 color: orange;
@@ -67,12 +72,14 @@ body {
             align-items: center;
             display: flex;
             font-size: 90%;
+             font-family: "Noto Sans", sans-serif;
         }
 
         .end {
             align-items: center;
             display: flex;
             font-size: 90%;
+            font-family: "Noto Sans", sans-serif;
         }
 
         .login {
@@ -84,6 +91,7 @@ body {
             box-shadow: 10%;
             box-shadow: 1px 5px 5px rgb(247, 224, 97);
             border-radius: 5px;
+            font-family: "Noto Sans", sans-serif;
         }
     }
 
@@ -95,11 +103,16 @@ body {
         width: 195.7vh;
         display: flex;
         justify-content: space-evenly;
+        height: 100%;
+        font-family: "Noto Sans", sans-serif;
+
+
     }
 
     .all {
         display: flex;
         flex-direction: column;
+        font-family: "Noto Sans", sans-serif;;
 
     }
 
@@ -116,6 +129,8 @@ body {
         font-size: 450%
     }
 
+
+
     /*CAIXA BRANCA ABAIXO DO TEXTO PRINCIPAL*/
     .box {
         padding: 3%;
@@ -126,6 +141,7 @@ body {
         display: flex;
         border-radius: 5px;
         flex-direction: column;
+        
 
 
 
@@ -133,6 +149,7 @@ body {
             display: flex;
             margin-bottom: 6%;
             gap: 2%;
+            font-family: "Noto Sans", sans-serif;
 
             .delivery {
                 display: flex;
@@ -188,11 +205,14 @@ body {
         width: 80%;
         gap: 15%;
         margin-left: 4%;
+        
 
         h4 {
             margin-top: 0.5%;
             font-size: 130%;
             margin-bottom: 3%;
+            font-family: "Noto Sans", sans-serif;
+            font-size: large;
         }
 
         .salad {
@@ -278,6 +298,7 @@ body {
                 position: absolute;
                 margin-top: -86px;
                 margin-right: 0%;
+                
 
 
 
@@ -341,6 +362,7 @@ body {
             justify-self: center;
             font-size: 50px;
             padding: 3%;
+            font-family: "Noto Sans", sans-serif;;
         }
 
         p {
@@ -380,8 +402,209 @@ body {
         }
 
     }
-}
 
+/*RESPONSIVIDADE DESKTOP*/
+    @media screen and (min-width: 1200px) {
+
+    }
+
+
+    /*RESPONSIVIDADE TABLET*/
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+        .middle,
+        .end {
+            width: 0;
+            visibility: hidden;
+            justify-content: left;
+        }
+
+        .login {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+
+
+        .main {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+
+            .yellow {
+                margin-top: 2rem;
+            }
+        }
+
+        .cards {
+
+            img {
+                width: 500px;
+                height: auto;
+            }
+
+            flex-direction: column;
+            gap: 5%;
+            margin-left: 95px;
+        }
+
+        .cards .salad .sob1 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+
+        }
+
+        .cards .pasta .sob2 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+        .cards .vegetables .sob3 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+        .cards .soup .sob4 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+
+        .cards .salad,
+        .cards .pasta,
+        .cards .vegetables,
+        .cards .soup {
+            margin-left: 0;
+            margin-bottom: 12%;
+        }
+
+        .days1,
+        .days2,
+        .days3,
+        .days4 {
+            width: 450px;
+        }
+    }
+
+
+
+    /* RESPONSIVIDADE CELULAR*/
+    @media screen and (max-width: 767px) {
+
+
+        .middle,
+        .end {
+            width: 0;
+            visibility: hidden;
+        }
+
+        .login {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+
+        .main {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+
+        .all {
+            font-size: small;
+            align-items: center;
+            text-align: center;
+        }
+
+        .yellow {
+            margin-top: 2rem;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box {
+            width: 90%;
+            height: auto;
+        }
+
+        .cards {
+
+            img {
+                width: 300px;
+                height: auto;
+            }
+
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+            margin-left: 25px;
+        }
+
+        .cards .salad .sob1 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .pasta .sob2 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .vegetables .sob3 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .soup .sob4 {
+            width: 100px;
+            height: auto;
+        }
+
+
+        .cards .salad,
+        .cards .pasta,
+        .cards .vegetables,
+        .cards .soup {
+            margin-left: 0;
+            margin-bottom: 12%;
+        }
+
+        .instructions {
+
+            h1 {
+                font-size: 30px;
+                padding: 6x;
+            }
+
+            .icons {
+                margin-left: 0%;
+                flex-direction: column;
+                width: 90%;
+                padding: 2px;
+            }
+
+            .location,
+            .order,
+            .meals,
+            .pay {
+
+                img {
+                    width: 100px;
+                    height: auto;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
 
 
 
