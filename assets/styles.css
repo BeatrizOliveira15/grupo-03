@@ -749,9 +749,41 @@ body {
     .card3{
         padding: 5%;
         background-color: var(--fundo);
-    }   
-    
-  
+    }  
+
+
+    /* Responsividade */
+
+
+@media (max-width: 1024px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card1 {
+    padding: 40px 20px;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card2 {
+    padding: 40px 20px;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 40px 20px;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+}
+
+
+
+
 }
  
 
@@ -781,7 +813,6 @@ body {
 
 p{
     color: rgb(151, 150, 150);
-    display: flex;
     justify-content: space-around;
 }
 
@@ -843,7 +874,7 @@ button {
     margin-left: 1350px;
 }
 .titulo-segundo{
-   .tres{
+   .tres {
     display: flex;
     justify-content: space-around;
     align-content: center;
