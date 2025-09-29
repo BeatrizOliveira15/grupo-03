@@ -898,8 +898,8 @@ body {
     /* Card 1 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
 
     .card1 {
-        padding: 60px;
-        background-color: var(--fundo);
+        padding: 5%;
+        background-color: white;
     }
 
     /* a div mÃ£e, que contÃ©m as configuraÃ§Ãµes bÃ¡sicas de todos os outros cards (container = contÃ©m) */
@@ -991,17 +991,80 @@ body {
     /* Card 2 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card2 {
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }
 
     /* Card 3 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card3 {
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
+    }  
+
+
+    /* Responsividade */
+
+
+@media (max-widht:767px) {
+    .card1 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
     }
-
-
+    .card2 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
 }
+
+@media (max-width:480px) {
+    .card1 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card2 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1031,7 +1094,6 @@ body {
 
 p {
     color: rgb(151, 150, 150);
-    display: flex;
     justify-content: space-around;
 }
 
@@ -1093,6 +1155,18 @@ button {
     color: white;
     margin-left: 1350px;
 }
+
+.titulo-segundo{
+   .tres {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    columns: 3;
+    width: 50%;
+    height: 200px;
+  }
+  }
 
 .titulo-segundo {
     .tres {
