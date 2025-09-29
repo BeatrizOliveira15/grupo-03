@@ -1,3 +1,13 @@
+
+:root {
+    --fundo: white;
+    --borda: gray;
+    --fonte: black;
+    --detalhes: rgb(255, 136, 0);
+    --títulos: rgb(255, 179, 0);
+    --subtítulos: orange;
+}
+=======
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -5,16 +15,22 @@
 
 
 
-*{
+
+* {
     margin: 0;
     padding: 0;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
 }
 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     background-color: white;
 }
 
@@ -25,7 +41,8 @@ body{
 /*bea pag 1*/
 
 .bea {
-/*HEADER*/
+
+    /*HEADER*/
     header {
         margin-right: 5%;
         margin-left: 5%;
@@ -148,15 +165,19 @@ body{
         display: flex !important;
         padding: 3%;
         position: relative;
+        width: 80%;
+        gap: 15%;
+        margin-left: 4%;
 
         h4 {
-            margin-top: 1%;
+            margin-top: 0.5%;
             font-size: 130%;
-            margin-bottom: 2%;
+            margin-bottom: 3%;
         }
 
         .salad {
-            margin-left: 6%;
+            margin-left: 3%;
+
             img {
                 border-radius: 10%;
             }
@@ -172,6 +193,7 @@ body{
                 margin-top: -86px;
 
 
+
                 .text {
                     flex-direction: column;
                     color: white;
@@ -182,8 +204,7 @@ body{
             .days1 {
                 background-color: #ffe1c8;
                 color: #de7837;
-                width: 40%;
-                padding: 2%;
+                padding: 4%;
                 font-size: larger;
                 border-radius: 7px;
             }
@@ -205,6 +226,7 @@ body{
                 margin-top: -86px;
 
 
+
                 .text {
                     flex-direction: column;
                     color: white;
@@ -215,8 +237,7 @@ body{
             .days2 {
                 background-color: #ffe1c8;
                 color: #de7837;
-                width: 40%;
-                padding: 2%;
+                padding: 4%;
                 font-size: larger;
                 border-radius: 7px;
             }
@@ -236,6 +257,8 @@ body{
                 justify-content: center;
                 position: absolute;
                 margin-top: -86px;
+                margin-right: 0%;
+
 
 
                 .text {
@@ -248,16 +271,13 @@ body{
             .days3 {
                 background-color: #ffe1c8;
                 color: #de7837;
-                width: 30%;
-                padding: 1.5%;
+                padding: 4%;
                 font-size: larger;
                 border-radius: 7px;
             }
         }
 
         .soup {
-            margin-left: -9%;
-            margin-right: 6%;
             img {
                 border-radius: 10%;
             }
@@ -273,6 +293,7 @@ body{
                 margin-top: -86px;
 
 
+
                 .text {
                     flex-direction: column;
                     color: white;
@@ -281,22 +302,68 @@ body{
             }
 
             .days4 {
+
                 background-color: #ffe1c8;
                 color: #de7837;
-                width: 45%;
-                padding: 2.5%;
+                padding: 7%;
                 font-size: larger;
                 border-radius: 7px;
             }
         }
+    }
 
+    .instructions {
+        background-color: #fefaef;
+
+        h1 {
+            color: #f18240;
+            justify-self: center;
+            font-size: 50px;
+            padding: 3%;
+        }
+
+        p {
+            color: #a0a0a0;
+        }
+
+        img {
+            margin-bottom: 10%;
+
+        }
+
+        .icons {
+            display: flex;
+            margin-bottom: 5%;
+            width: 60%;
+            padding: 5%;
+            margin-left: 15%;
+        }
+
+        .location {
+            margin-right: 15%;
+
+        }
+
+        .order {
+            margin-right: 15%;
+        }
+
+        .pay {
+            margin-right: 15%;
+        }
+
+        .meals {
+            img {
+                margin-bottom: 20%;
+            }
+        }
 
     }
 }
 
 /*pietra*/
 
-.pietra{
+.pietra {
 
     .lala {
         font-family: Arial, sans-serif;
@@ -305,30 +372,30 @@ body{
         justify-content: center;
         align-items: center;
         margin: 0;
-    padding: 0%;
-  }
-  
-  .slider-container {
-      display: flex;
-      align-items: center;
-      width: 80%;
-      max-width: 4000px;
-      overflow: hidden;
-      position: relative;
+        padding: 0%;
     }
-    
+
+    .slider-container {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        max-width: 4000px;
+        overflow: hidden;
+        position: relative;
+    }
+
     .card-slider {
         overflow: hidden;
         width: 100%;
         border-radius: 10px;
     }
-    
+
     .cards {
         display: flex;
-        transition: transform 0.5s ease;
-        width: max-content;
+        /* transition: transform 0.5s ease; */
+        /* width: max-content; */
     }
-    
+
     .card {
         background-color: #fff;
         border-radius: 8px;
@@ -340,17 +407,17 @@ body{
         flex-shrink: 0;
         height: 70%;
     }
-    
+
     .card img {
         width: 100%;
         height: 180px;
         object-fit: cover;
     }
-    
+
     .card-content {
         padding: 20px;
     }
-    
+
     .tag {
         display: inline-block;
         padding: 5px 10px;
@@ -360,20 +427,233 @@ body{
         color: #fff;
         margin-bottom: 10px;
     }
-    
+
     .tag.technology {
         background-color: #00aaff;
     }
-    
+
     .tag.popular {
         background-color: #6b5b95;
     }
-    
+
     .tag.design {
         background-color: #ff6b6b;
     }
-    
+
     .card h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .author-info h4 {
+        font-size: 0.9em;
+        color: #333;
+        margin: 0;
+    }
+
+    .author-info small {
+        font-size: 0.8em;
+        color: #999;
+    }
+
+    .slider-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .prev {
+        left: -10px;
+    }
+
+    .next {
+        right: -10px;
+    }
+
+    .btn-moderno {
+        padding: 15px 90px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: var(--detalhes);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: none;
+        transition: all 0.3s ease;
+
+    }
+
+
+
+    .visao {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        /* padding-left: 57%; */
+        padding-top: 4%;
+        color: var(--títulos);
+        display: flex;
+        gap: 10px;
+    }
+
+    .visao h3 {
+        display: flex;
+        padding-top: 0.75rem;
+    }
+
+    .bolinhas {
+        background-color: var(--títulos);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 5rem;
+        color: white;
+        text-align: center;
+    }
+
+    .bolinha img {
+        margin-top: 20%;
+    }
+}
+
+
+.btn-moderno:hover {
+    background-color: var(--subtítulos);
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.btn-moderno:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plano {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 70%;
+}
+}
+
+
+
+/* pietra */
+
+.header {
+    background-color: var(--fundo);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.lala {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0%;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 4000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cartoes {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 70%;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tag.technology {
+    background-color: #00aaff;
+}
+
+.tag.popular {
+    background-color: #6b5b95;
+}
+
+.tag.design {
+    background-color: #ff6b6b;
+}
+
+.card h3 {
     font-size: 1.2em;
     margin: 10px 0;
     color: #333;
@@ -430,6 +710,8 @@ body{
     right: -10px;
 }
 
+
+/* Estilos do botão */
 .btn-moderno {
     padding: 15px 90px;
     font-size: 1rem;
@@ -441,191 +723,7 @@ body{
     cursor: pointer;
     box-shadow: none;
     transition: all 0.3s ease;
-    
-}
 
-
-.btn-moderno:hover {
-    background-color: var(--subtítulos);
-    transform: scale(1.05);
-    box-shadow: none;
-}
-
-.btn-moderno:active {
-    transform: scale(1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.plano {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    height: 70%;
-}
-}
-
-
- 
-/* pietra */
-
-  .header {
-    background-color: var(--fundo);
-    padding: 20px;
-    text-align: center;
-     font-family: Arial, sans-serif;
-  }
-
-  .lala {
-     font-family: Arial, sans-serif;
-    background-color: var(--fundo);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0%;
-  }
-  
-  .slider-container {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 4000px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .cartoes {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .cards {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: max-content;
-  }
-
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    height: 70%;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    padding: 20px;
-  }
-  
-  .tag {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .tag.technology {
-    background-color: #00aaff;
-  }
-  
-  .tag.popular {
-    background-color: #6b5b95;
-  }
-  
-  .tag.design {
-    background-color: #ff6b6b;
-  }
-  
-  .card h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .card p {
-    font-size: 0.9em;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .author {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .author-info h4 {
-    font-size: 0.9em;
-    color: #333;
-    margin: 0;
-  }
-  
-  .author-info small {
-    font-size: 0.8em;
-    color: #999;
-  }
-  
-  .slider-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2em;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .prev {
-    left: -10px;
-  }
-  
-  .next {
-    right: -10px;
-  }
-  
-
-  /* Estilos do botão */
-  .btn-moderno {
-    padding: 15px 90px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: var(--detalhes);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: none;
-    transition: all 0.3s ease;
-    
 }
 
 .btn-moderno:hover {
@@ -640,7 +738,7 @@ body{
 }
 
 .plano {
-     background-color: #fff;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -744,6 +842,7 @@ body{
         padding: 60px;
         background-color: var(--fundo);
     }
+
     /* a div mãe, que contém as configurações básicas de todos os outros cards (container = contém) */
     .container {
         width: 900px;
@@ -753,52 +852,58 @@ body{
         box-shadow: 3px 9px 75px 21px var(--borda);
         -webkit-box-shadow: 3px 9px 75px 21px var(--borda);
         -moz-box-shadow: 3px 9px 75px 21px var(--borda);
-        
+
     }
-    
+
     /* O texto se adapta ao container, comfigurações de texto para as escritas h1, p e geral.  */
     .texto {
         width: 50%;
         height: 100%;
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        
+
         h1 {
-            color:black;
+            color: black;
             font-weight: bold;
             font-size: 40px;
- 
+
         }
-        
+
         p {
-            font-size:16px;
+            font-size: 16px;
             margin-top: 15px;
             text-align: justify;
         }
-        
+
     }
-    
+
     /* configurações de todas as imagens dos cards */
-    
+
     .imagem {
         width: 50%;
         height: 100%;
         display: flex;
-        
+
     }
-    
+
 
     /* utilizado para deixar textos isolados de outra cor */
     span {
         color: rgb(255, 208, 0);
         font-weight: bold;
     }
+
+
+    /* configurações de todos os botões */
+    .botao {
+
     
 /* configurações de todos os botões */
     .botao1 {
+
         margin: 60px;
         padding: 20px 60px;
         background-color: var(--botao);
@@ -806,6 +911,15 @@ body{
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+
+
+        box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+        -webkit-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+        -moz-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+
+
+    }
+
         color: var(--detalhes);
         box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
         -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
@@ -815,14 +929,30 @@ body{
     }
     
     /* Configurações de cardápio (botão)*/
+
     .Cardapio {
         text-align: center;
-        color:black;
+        color: black;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
-        
+
     }
+
+
+    .botao:hover {
+        background-color: var(--fundoneutro);
+        transition: all 0.3s ease;
+    }
+
+
+    .card2 {
+        padding: 5%;
+        background-color: var(--fundo);
+    }
+
+    .card3 {
+
  /* Configurações de botão, animações e efeitos de cor*/
     .botao1:hover{
         background-color:var(--fundoneutro) ;
@@ -837,42 +967,38 @@ body{
     
      /* Card 3 = correponde as configurações dos blocos de imagem e texto (cartões) */
     .card3{
+
         padding: 5%;
         background-color: var(--fundo);
-    }   
-    
-  
+    }
+
+
 }
- 
+
 /*marcela*/
 
-.marcela{
+.marcela {
     background-color: rgb(36, 36, 36);
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
 
-    img{
-        width:100%;
+    img {
+        width: 100%;
         height: 200px;
         margin-top: 0%;
-        display: flex; ;
+        display: flex;
+        ;
     }
-    
-    
-    .rodapé{
- background-color: rgb(36, 36, 36);
- width: 100%;
- height: 900px;
- display: flex;
-}
 
 
+    .rodapé {
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        height: 900px;
+        display: flex;
+    }
 
-p{
-    color: var(--borda);
-    display: flex;
-    justify-content: space-around;
-}
+
 
 h2{
     color: var(--borda);
@@ -890,18 +1016,46 @@ h2{
    
     
 
-    .primeiro{
+
+    p {
+        color: var(--borda);
         display: flex;
         justify-content: space-around;
+    }
+
+    h2 {
+        color: var(--borda);
+        display: flex;
         align-content: center;
-    
+
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 20px;
+
+
     }
-    
-    
-    hr{
-        width: 90%;
-        opacity: 0.3;
+
+    .titulo-rodape {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+        .primeiro {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+
+        }
+
+
+        hr {
+            width: 90%;
+            opacity: 0.3;
+        }
+
     }
+
     
 }
 .tres{
@@ -914,7 +1068,18 @@ h2{
     height: 200px;
   
 
-}
+
+    .tres {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+        columns: 3;
+        width: 50%;
+        height: 200px;
+
+
+    }
 
 input{
     width: 300px;
@@ -927,8 +1092,33 @@ input{
     background-color: rgb(63, 63, 63);
     
 
-}
 
+    input {
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: 1000px;
+        background-color: rgb(63, 63, 63);
+
+    }
+
+
+
+    bUtton {
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0px;
+        position: relative;
+        bottom: 50px;
+        margin-left: 10px;
+        background-color: orange;
+        color: white;
+        margin-left: 1350px;
+    }
 
 button {
     width: 100px;
@@ -947,4 +1137,5 @@ button {
     color: white;
     margin-left: 1350px;
 }
+
 }
