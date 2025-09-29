@@ -651,8 +651,8 @@ body {
     /* Card 1 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
 
     .card1 {
-        padding: 60px;
-        background-color: var(--fundo);
+        padding: 5%;
+        background-color: white;
     }
     /* a div mÃ£e, que contÃ©m as configuraÃ§Ãµes bÃ¡sicas de todos os outros cards (container = contÃ©m) */
     .container {
@@ -742,44 +742,73 @@ body {
      /* Card 2 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card2{
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }
     
      /* Card 3 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card3{
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }  
 
 
     /* Responsividade */
 
 
-@media (max-width: 1024px) {}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media (max-widht:767px) {
     .card1 {
-    padding: 40px 20px;
+    padding: 5%;
+    background-color: white;
 	display: flex;
 	justify-content: center;
     flex-wrap: nowrap;
         
     }
     .card2 {
-    padding: 40px 20px;
+    padding: 5%;
+    background-color: white;
 	display: flex;
 	justify-content: center;
     flex-wrap: nowrap;
         
     }
     .card3 {
-    padding: 40px 20px;
+    padding: 5%;
+    background-color: white;
 	display: flex;
 	justify-content: center;
     flex-wrap: nowrap;
         
     }
 }
+
+@media (max-width:480px) {
+    .card1 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card2 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+}
+
 
 
 
