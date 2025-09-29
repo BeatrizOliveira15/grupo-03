@@ -1,3 +1,4 @@
+
 :root {
     --fundo: white;
     --borda: gray;
@@ -6,8 +7,13 @@
     --títulos: rgb(255, 179, 0);
     --subtítulos: orange;
 }
-
+=======
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
 
 
 * {
@@ -15,11 +21,14 @@
     padding: 0;
 }
 
+
 body {
     background-color: rgb(255, 255, 255);
 }
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: white;
@@ -503,6 +512,7 @@ body {
     }
 
 
+
     .visao {
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
@@ -532,6 +542,7 @@ body {
     }
 }
 
+
 .btn-moderno:hover {
     background-color: var(--subtítulos);
     transform: scale(1.05);
@@ -553,6 +564,7 @@ body {
     flex-direction: column;
     flex-shrink: 0;
     height: 70%;
+}
 }
 
 
@@ -744,42 +756,85 @@ body {
 
 
 /*bia*/
-.bia {
+ 
+.bia1 {
     background-color: rgb(251, 251, 234);
     display: flex;
     width: 100%;
-    height: 500px;
-
-    .search {
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 9%;
-        padding-top: 3%;
-    }
-
-    .visao {
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding-left: 57%;
-        padding-top: 4%;
-        color: var(--títulos);
-    }
-
-    .bolinha1 {
-        background-color: var(--títulos);
-        width: 70%;
-        height: 15%;
-        border-radius: 50%;
-        color: white;
-        text-align: center;
-        margin-left: 130%;
-        align-items: start;
-    }
+    height: 400px;
 }
+ 
+.search {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10rem;
+    padding-top: 3rem;
+    color: rgb(68, 67, 67);
+}
+ 
+.visao {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--títulos);
+    display: flex;
+    padding-top: 3.8rem;
+    margin-left: 40rem;
+}
+ 
+.bolinhas {
+    background-color: var(--títulos);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0.5%;
+}
+ 
+.bolinhas img {
+    justify-content: end;
+}
+ 
+.imagens {
+    display: flex;
+    width: 3rem;
+    gap: 30px;
+    display: flex;
+    margin-top: 12%;
+    justify-content: flex-end;
+   
+}
+ 
+.imagens img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10rem;
+}
+ 
+/* .comidas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 21rem;
+    color: rgb(94, 93, 93);
+    display: flex;
+ 
+} */
+ 
+ 
+
+
+
+
 
 /*isadora*/
 
 .ISADORA {
+
+    body{
+    background-color: white;
+}
 
     /* Card 1 = correponde as configurações dos blocos de imagem e texto (cartões) */
 
@@ -841,8 +896,14 @@ body {
         font-weight: bold;
     }
 
+
     /* configurações de todos os botões */
     .botao {
+
+    
+/* configurações de todos os botões */
+    .botao1 {
+
         margin: 60px;
         padding: 20px 60px;
         background-color: var(--botao);
@@ -851,12 +912,23 @@ body {
         justify-content: center;
         border-radius: 10px;
 
+
         box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
         -webkit-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
         -moz-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
 
 
     }
+
+        color: var(--detalhes);
+        box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
+        
+        
+    }
+    
+    /* Configurações de cardápio (botão)*/
 
     .Cardapio {
         text-align: center;
@@ -866,6 +938,7 @@ body {
         transition: all 0.3s ease;
 
     }
+
 
     .botao:hover {
         background-color: var(--fundoneutro);
@@ -879,6 +952,22 @@ body {
     }
 
     .card3 {
+
+ /* Configurações de botão, animações e efeitos de cor*/
+    .botao1:hover{
+        background-color:var(--fundoneutro) ;
+        transition: all 0.3s ease;
+    }
+    
+     /* Card 2 = correponde as configurações dos blocos de imagem e texto (cartões) */
+    .card2{
+        padding: 5%;
+        background-color: var(--fundo);
+    }
+    
+     /* Card 3 = correponde as configurações dos blocos de imagem e texto (cartões) */
+    .card3{
+
         padding: 5%;
         background-color: var(--fundo);
     }
@@ -911,6 +1000,23 @@ body {
 
 
 
+h2{
+    color: var(--borda);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+.titulo-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+
+
     p {
         color: var(--borda);
         display: flex;
@@ -921,9 +1027,11 @@ body {
         color: var(--borda);
         display: flex;
         align-content: center;
+
         justify-content: space-between;
         flex-direction: column;
         font-size: 20px;
+
 
     }
 
@@ -948,6 +1056,19 @@ body {
 
     }
 
+    
+}
+.tres{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    columns: 3;
+    width: 50%;
+    height: 200px;
+  
+
+
     .tres {
         display: flex;
         justify-content: space-around;
@@ -957,7 +1078,20 @@ body {
         width: 50%;
         height: 200px;
 
+
     }
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 1000px;
+    background-color: rgb(63, 63, 63);
+    
+
 
     input {
         width: 300px;
@@ -972,6 +1106,7 @@ body {
     }
 
 
+
     bUtton {
         width: 100px;
         height: 40px;
@@ -984,4 +1119,23 @@ body {
         color: white;
         margin-left: 1350px;
     }
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+    border: none;
+    position: relative;
+
+    border: 0px;
+   
+
+    bottom: 50px;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    margin-left: 1350px;
+}
+
 }
