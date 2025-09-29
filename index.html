@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foodwagon</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -51,22 +51,30 @@
                     <div class="box">
 
                         <div class="top">
-                            <img src="./img/delivery.png" alt="" width="20px">
-                            <p> Delivery</p>
-                            <img src="./img/pickup.png" alt="" width="20px">
-                            <p>Pickup</p>
+                            <div class="delivery">
+                                <img src="./img/delivery.png" alt="" width="20px">
+                             <p> Delivery</p>                             </div>
+
+                            <div class="pickup">
+                                <img src="./img/pickup.png" alt="" width="20px">
+                                <p>Pickup</p>
+                            </div>
                         </div>
 
-                        <div class="bottom">
-                            <div class="boxadress">
-                                <img src="./img/location.png" alt="" width="40px">
-                                <p>Enter Your Address</p>
-                            </div>
 
-                            <div class="boxfind">
-                                <img src="./img/find.png" alt="" width="30">
-                                <p>Find Food</p>
-                            </div>
+                        <div class="bottom">
+                            <form action="forms1">
+                                <div class="boxadress">
+                                    <img src="./img/location.png" alt="" width="40px">
+                                    <input type="text" name="endereco" placeholder="Enter Your Address" required>
+                                </div>
+
+
+                                <div class="boxfind">
+                                    <img src="./img/find.png" alt="" width="30">
+                                    <button type="submit">Find Food</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -78,7 +86,7 @@
             <section>
                 <div class="cards">
                     <div class="salad">
-                        <img src="./img/salad.jpg" alt="" width="85%">
+                        <img src="./img/salad.jpg" alt="" width="180%">
 
                         <div class="sob1">
                             <h1> 15</h1>
@@ -96,7 +104,7 @@
                     </div>
 
                     <div class="pasta">
-                        <img src="./img/pasta.jpg" alt="" width="85%">
+                        <img src="./img/pasta.jpg" alt="" width="180%">
 
                         <div class="sob2">
                             <h1> 10</h1>
@@ -114,7 +122,7 @@
                     </div>
 
                     <div class="vegetables">
-                        <img src="./img/vegetables.jpg" alt="" width="62%">
+                        <img src="/img/vegetables.jpg" alt="" width="130%">
 
                         <div class="sob3">
                             <h1> 25</h1>
@@ -132,7 +140,7 @@
                     </div>
 
                     <div class="soup">
-                        <img src="./img/soup.jpg" alt="" width="98%">
+                        <img src="./img/soup.jpg" alt="" width="139%">
 
                         <div class="sob4">
                             <h1> 20</h1>
@@ -153,12 +161,40 @@
 
                 </div>
             </section>
-        </div>
 
+            <div class="instructions">
+                <h1>How does it work</h1>
+
+                <div class="icons">
+
+                    <div class="location">
+                        <img src="./img/lastloc.png" alt="" width="80%">
+                        <h3><b>Select location</b></h3>
+                        <p>Choose the location where your food will be delivered</p>
+                    </div>
+
+                    <div class="order">
+                        <img src="./img/order.png" alt="" width="75%">
+                        <h3><b>Choose order</b></h3>
+                        <p>Check over hundreds of menus to pick your favorite food</p>
+                    </div>
+
+                    <div class="pay">
+                        <img src="./img/pay.png" alt="" width="56%">
+                        <h3><b>Pay advanced</b></h3>
+                        <p>It´s quick, safe, and simple. Select several methods of payment</p>
+                    </div>
+
+                    <div class="meals">
+                        <img src="./img/meals.png" alt="" width="95%">
+                        <h3><b>Enjoy meals</b></h3>
+                        <p>Food is made and delivered directly to your home</p>
+
+                    </div>
+                </div>
+            </div>
       
-      
-      
-      
+    </main>
   
  
 
@@ -169,7 +205,7 @@
         <h1> <b>Popular items</b></h1>
     </div>
 
-    <div class="lala">
+    <div class="imgs1">
         <div class="slider-container">
 
             <div class="cartoes">
@@ -322,7 +358,7 @@
                     </div>
                 </div>
                 <div class="imagem">
-                    <img src="https://images.pexels.com/photos/33654347/pexels-photo-33654347.jpeg?_gl=1*17umla6*_ga*MjEyMzExNDA0…" alt="Croissant" alt="">
+                    <img src="https://images.pexels.com/photos/33654347/pexels-photo-33654347.jpeg?_gl=1*17umla6*_ga*MjEyMzExNDA0…" alt="Croissant">
                 </div>
             </article>
         </section>
@@ -383,7 +419,7 @@
 <div class="marcela">
 
     
-    <img src="assets/img/f189d6889f7b3a4f2950df2138db5efd.jpg" alt="img">
+    <img src="https://i.pinimg.com/1200x/e7/e7/90/e7e790a25de8aecb8bb983d8f246df65.jpg" alt="img">
     <br>
     <div class="rodapé">
     
@@ -408,11 +444,6 @@
             
         </div>
 
-
-       
-        <hr>
-
-        
         <div class="titulo-segundo">
             
             
@@ -431,27 +462,20 @@
             <div class="legal">
             <h2>Legal </h2>
              <p> Terms & Conditions <br>Refund & Cancellation<br>Privacy Policy <br> Cookie Policy </p>
-         </div>
             </div>
+         
+            </div>
+            
 
             <label for="Enter Your email"></label>
             <input type="email" placeholder="Enter Your email">
             <button> Subscribe</button>
+           
             
-            </div>
-
+            
         </div>
-
-        
-        
-    </div>
-    
+    </div> 
 </div>
 
-
-    </main>
-
-
 </body>
-
 </html>
