@@ -1,4 +1,3 @@
-
 :root {
     --fundo: white;
     --borda: gray;
@@ -7,28 +6,12 @@
     --títulos: rgb(255, 179, 0);
     --subtítulos: orange;
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-
-
 
 
 * {
     margin: 0;
     padding: 0;
 }
-
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     background-color: white;
@@ -38,7 +21,7 @@ body {
 
 
 
-/*bea pag 1*/
+/*bea*/
 
 .bea {
 
@@ -160,209 +143,23 @@ body {
         }
     }
 
-    /*CARDS*/
-    .cards {
-        display: flex !important;
-        padding: 3%;
-        position: relative;
-        width: 80%;
-        gap: 15%;
-        margin-left: 4%;
 
-        h4 {
-            margin-top: 0.5%;
-            font-size: 130%;
-            margin-bottom: 3%;
-        }
-
-        .salad {
-            margin-left: 3%;
-
-            img {
-                border-radius: 10%;
-            }
-
-            .sob1 {
-                background-color: #feb111;
-                width: 8%;
-                border-radius: 0px 15px 0px 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                margin-top: -86px;
-
-
-
-                .text {
-                    flex-direction: column;
-                    color: white;
-
-                }
-            }
-
-            .days1 {
-                background-color: #ffe1c8;
-                color: #de7837;
-                padding: 4%;
-                font-size: larger;
-                border-radius: 7px;
-            }
-        }
-
-        .pasta {
-            img {
-                border-radius: 10%;
-            }
-
-            .sob2 {
-                background-color: #feb111;
-                width: 8%;
-                border-radius: 0px 15px 0px 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                margin-top: -86px;
-
-
-
-                .text {
-                    flex-direction: column;
-                    color: white;
-
-                }
-            }
-
-            .days2 {
-                background-color: #ffe1c8;
-                color: #de7837;
-                padding: 4%;
-                font-size: larger;
-                border-radius: 7px;
-            }
-        }
-
-        .vegetables {
-            img {
-                border-radius: 10%;
-            }
-
-            .sob3 {
-                background-color: #feb111;
-                width: 8%;
-                border-radius: 0px 15px 0px 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                margin-top: -86px;
-                margin-right: 0%;
-
-
-
-                .text {
-                    flex-direction: column;
-                    color: white;
-
-                }
-            }
-
-            .days3 {
-                background-color: #ffe1c8;
-                color: #de7837;
-                padding: 4%;
-                font-size: larger;
-                border-radius: 7px;
-            }
-        }
-
-        .soup {
-            img {
-                border-radius: 10%;
-            }
-
-            .sob4 {
-                background-color: #feb111;
-                width: 8%;
-                border-radius: 0px 15px 0px 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                margin-top: -86px;
-
-
-
-                .text {
-                    flex-direction: column;
-                    color: white;
-
-                }
-            }
-
-            .days4 {
-
-                background-color: #ffe1c8;
-                color: #de7837;
-                padding: 7%;
-                font-size: larger;
-                border-radius: 7px;
-            }
-        }
-    }
-
-    .instructions {
-        background-color: #fefaef;
-
-        h1 {
-            color: #f18240;
-            justify-self: center;
-            font-size: 50px;
-            padding: 3%;
-        }
-
-        p {
-            color: #a0a0a0;
-        }
-
-        img {
-            margin-bottom: 10%;
-
-        }
-
-        .icons {
-            display: flex;
-            margin-bottom: 5%;
-            width: 60%;
-            padding: 5%;
-            margin-left: 15%;
-        }
-
-        .location {
-            margin-right: 15%;
-
-        }
-
-        .order {
-            margin-right: 15%;
-        }
-
-        .pay {
-            margin-right: 15%;
-        }
-
-        .meals {
-            img {
-                margin-bottom: 20%;
-            }
-        }
-
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*pietra*/
 
+.pietra {
 .pietra {
 
     .lala {
@@ -382,7 +179,18 @@ body {
         max-width: 4000px;
         overflow: hidden;
         position: relative;
+        padding: 0%;
     }
+
+    .slider-container {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        max-width: 4000px;
+        overflow: hidden;
+        position: relative;
+    }
+
 
     .card-slider {
         overflow: hidden;
@@ -390,11 +198,13 @@ body {
         border-radius: 10px;
     }
 
+
     .cards {
         display: flex;
         /* transition: transform 0.5s ease; */
         /* width: max-content; */
     }
+
 
     .card {
         background-color: #fff;
@@ -408,15 +218,18 @@ body {
         height: 70%;
     }
 
+
     .card img {
         width: 100%;
         height: 180px;
         object-fit: cover;
     }
 
+
     .card-content {
         padding: 20px;
     }
+
 
     .tag {
         display: inline-block;
@@ -428,19 +241,27 @@ body {
         margin-bottom: 10px;
     }
 
+
     .tag.technology {
         background-color: #00aaff;
     }
+
 
     .tag.popular {
         background-color: #6b5b95;
     }
 
+
     .tag.design {
         background-color: #ff6b6b;
     }
 
+
     .card h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+    }
         font-size: 1.2em;
         margin: 10px 0;
         color: #333;
@@ -451,7 +272,17 @@ body {
         color: #666;
         margin-bottom: 15px;
     }
+    .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+    }
 
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
     .author {
         display: flex;
         align-items: center;
@@ -464,13 +295,28 @@ body {
         border-radius: 50%;
         object-fit: cover;
     }
+    .author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
     .author-info h4 {
         font-size: 0.9em;
         color: #333;
         margin: 0;
     }
+    .author-info h4 {
+        font-size: 0.9em;
+        color: #333;
+        margin: 0;
+    }
 
+    .author-info small {
+        font-size: 0.8em;
+        color: #999;
+    }
     .author-info small {
         font-size: 0.8em;
         color: #999;
@@ -488,7 +334,22 @@ body {
         transform: translateY(-50%);
         z-index: 1;
     }
+    .slider-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
 
+    .prev {
+        left: -10px;
+    }
     .prev {
         left: -10px;
     }
@@ -496,7 +357,23 @@ body {
     .next {
         right: -10px;
     }
+    .next {
+        right: -10px;
+    }
 
+    .btn-moderno {
+        padding: 15px 90px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: var(--detalhes);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: none;
+        transition: all 0.3s ease;
+
+    }
     .btn-moderno {
         padding: 15px 90px;
         font-size: 1rem;
@@ -527,20 +404,36 @@ body {
         display: flex;
         padding-top: 0.75rem;
     }
+    .visao {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 57%;
+        padding-top: 4%;
+        color: var(--títulos);
 
-    .bolinhas {
-        background-color: var(--títulos);
-        width: 3rem;
-        height: 3rem;
-        border-radius: 5rem;
-        color: white;
-        text-align: center;
+        display: flex;
+        gap: 10px;
+
+        /* background-color: aqua; */
     }
 
-    .bolinha img {
-        margin-top: 20%;
+    .visao h3 {
+        display: flex;
+        padding-top: 0.75rem;
     }
+
+.bolinha1 {
+    background-color: var(--títulos);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    color: white;
+    text-align: center;
 }
+.bolinha1 img{
+    margin-top: 20%;
+}
+    }
 
 
 .btn-moderno:hover {
@@ -565,20 +458,21 @@ body {
     flex-shrink: 0;
     height: 70%;
 }
-}
+
+
 
 
 
 /* pietra */
 
-.header {
+.title {
     background-color: var(--fundo);
     padding: 20px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
-.lala {
+.food {
     font-family: Arial, sans-serif;
     background-color: var(--fundo);
     display: flex;
@@ -703,13 +597,18 @@ body {
 }
 
 .prev {
+}
+
+.prev {
     left: -10px;
+}
+
+.next {
 }
 
 .next {
     right: -10px;
 }
-
 
 /* Estilos do botão */
 .btn-moderno {
@@ -723,6 +622,7 @@ body {
     cursor: pointer;
     box-shadow: none;
     transition: all 0.3s ease;
+
 
 }
 
@@ -745,11 +645,35 @@ body {
     margin: 0 10px;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     height: 70%;
+    /* position: relative; */
 }
 
+.general {
+    display: flex;
+    flex-direction: row;
+}
 
+.promo {
+    background-color: rgb(243, 114, 40);
+    padding: 5px 18px;
+    color: white;
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 5rem;
+
+}
+
+.hour {
+    background-color: yellow;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15rem;
+}
 
 
 
@@ -861,11 +785,14 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
 
+
         h1 {
+            color: black;
             color: black;
             font-weight: bold;
             font-size: 40px;
@@ -973,21 +900,47 @@ body {
     }
 
 
+    }
+
+
 }
+    
+
+
+
+
+
+
+
 
 /*marcela*/
 
 .marcela {
+.marcela {
     background-color: rgb(36, 36, 36);
     margin: 0;
     padding: 0;
+    margin: 0;
+    padding: 0;
 
+    img {
+        width: 100%;
     img {
         width: 100%;
         height: 200px;
         margin-top: 0%;
         display: flex;
         ;
+        display: flex;
+        ;
+    }
+
+
+    .rodapé {
+        background-color: rgb(36, 36, 36);
+        width: 100%;
+        height: 900px;
+        display: flex;
     }
 
 
@@ -1041,6 +994,20 @@ h2{
         width: 100%;
 
 
+        .primeiro {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+
+        }
+
+
+        hr {
+            width: 90%;
+            opacity: 0.3;
+        }
+
+    }
         .primeiro {
             display: flex;
             justify-content: space-around;
