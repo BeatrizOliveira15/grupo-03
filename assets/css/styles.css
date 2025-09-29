@@ -825,7 +825,7 @@ body {
 
 
 
-/*isadora*/
+
 
 /*isadora*/
 
@@ -839,7 +839,7 @@ body {
 
     .card1 {
         padding: 60px;
-        background-color: var(--fundo);
+        background-color: white;
     }
     /* a div mÃ£e, que contÃ©m as configuraÃ§Ãµes bÃ¡sicas de todos os outros cards (container = contÃ©m) */
     .container {
@@ -929,13 +929,13 @@ body {
      /* Card 2 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card2{
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }
     
      /* Card 3 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
     .card3{
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }   
     
   

@@ -1,8 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root {
+
   --fundo: #fffbe6;
   --detalhes: #ffa500;
   --detalhes2:#ffbd43;
@@ -20,6 +24,25 @@
 
 *{
   
+
+    --fundo: #fffbe6;
+    --detalhes: #ffa500;
+    --detalhes2: #ffbd43;
+    --botao: #f96325;
+    --subtittle: #f18647;
+    --fundoneutro: #fefaef;
+    --Tittle: rgb(68, 67, 67);
+    --sombra: #bdbdbd;
+    --borda: #4f4f4f;
+    --amarelo: #fcc70f;
+    --branco2: #f0d4c2;
+    --laranja3: #f18647;
+    --amarelo2: #feb111;
+}
+
+* {
+
+
     margin: 0;
     padding: 0;
 }
@@ -38,8 +61,11 @@ body {
 /*bea pag 1*/
 
 .bea {
+    p {
+        color: black;
+    }
 
-    /*HEADER*/
+    /*CABECALHO*/
     header {
         margin-right: 5%;
         margin-left: 5%;
@@ -47,9 +73,11 @@ body {
         display: flex;
         justify-content: space-between;
 
+
         .title {
             align-items: center;
             display: flex;
+            font-family: "Alan Sans", sans-serif;
 
             h2 {
                 color: orange;
@@ -64,12 +92,14 @@ body {
             align-items: center;
             display: flex;
             font-size: 90%;
+             font-family: "Noto Sans", sans-serif;
         }
 
         .end {
             align-items: center;
             display: flex;
             font-size: 90%;
+            font-family: "Noto Sans", sans-serif;
         }
 
         .login {
@@ -81,10 +111,11 @@ body {
             box-shadow: 10%;
             box-shadow: 1px 5px 5px rgb(247, 224, 97);
             border-radius: 5px;
+            font-family: "Noto Sans", sans-serif;
         }
     }
 
-    /*MAIN*/
+    /*DIV+TEXTO PRINCIPAL*/
     .main {
         padding-left: 6%;
         padding-top: 6%;
@@ -92,11 +123,16 @@ body {
         width: 195.7vh;
         display: flex;
         justify-content: space-evenly;
+        height: 100%;
+        font-family: "Noto Sans", sans-serif;
+
+
     }
 
     .all {
         display: flex;
         flex-direction: column;
+        font-family: "Noto Sans", sans-serif;;
 
     }
 
@@ -113,7 +149,9 @@ body {
         font-size: 450%
     }
 
-    /*WHITE BOX*/
+
+
+    /*CAIXA BRANCA ABAIXO DO TEXTO PRINCIPAL*/
     .box {
         padding: 3%;
         margin-top: 5%;
@@ -123,6 +161,7 @@ body {
         display: flex;
         border-radius: 5px;
         flex-direction: column;
+        
 
 
 
@@ -130,6 +169,27 @@ body {
             display: flex;
             margin-bottom: 6%;
             gap: 2%;
+            font-family: "Noto Sans", sans-serif;
+
+            .delivery {
+                display: flex;
+                align-items: center;
+            }
+
+            .delivery:hover {
+                background-color: #f18240;
+                border-radius: 10%;
+            }
+
+            .pickup {
+                display: flex;
+                align-items: center;
+            }
+
+            .pickup:hover {
+                background-color: #f18240;
+                border-radius: 10%;
+            }
         }
 
         .bottom {
@@ -139,7 +199,7 @@ body {
 
         .boxadress {
             background-color: rgb(231, 229, 229);
-            color: #bdbdbd;
+            color: #bdbdbd !important;
             border-radius: 5px;
             display: flex;
             align-items: center;
@@ -147,10 +207,10 @@ body {
         }
 
         .boxfind {
+            background-color: #f96325;
+            color: white !important;
             display: flex;
             align-items: center;
-            background-color: #f96325;
-            color: white;
             border-radius: 5px;
             width: 30%;
             padding: 1.5%
@@ -165,11 +225,14 @@ body {
         width: 80%;
         gap: 15%;
         margin-left: 4%;
+        
 
         h4 {
             margin-top: 0.5%;
             font-size: 130%;
             margin-bottom: 3%;
+            font-family: "Noto Sans", sans-serif;
+            font-size: large;
         }
 
         .salad {
@@ -255,6 +318,7 @@ body {
                 position: absolute;
                 margin-top: -86px;
                 margin-right: 0%;
+                
 
 
 
@@ -309,6 +373,7 @@ body {
         }
     }
 
+    /*INSTRUCOES DE PEDIDO*/
     .instructions {
         background-color: #fefaef;
 
@@ -317,6 +382,7 @@ body {
             justify-self: center;
             font-size: 50px;
             padding: 3%;
+            font-family: "Noto Sans", sans-serif;;
         }
 
         p {
@@ -356,8 +422,209 @@ body {
         }
 
     }
-}
 
+/*RESPONSIVIDADE DESKTOP*/
+    @media screen and (min-width: 1200px) {
+
+    }
+
+
+    /*RESPONSIVIDADE TABLET*/
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+        .middle,
+        .end {
+            width: 0;
+            visibility: hidden;
+            justify-content: left;
+        }
+
+        .login {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+
+
+        .main {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+
+            .yellow {
+                margin-top: 2rem;
+            }
+        }
+
+        .cards {
+
+            img {
+                width: 500px;
+                height: auto;
+            }
+
+            flex-direction: column;
+            gap: 5%;
+            margin-left: 95px;
+        }
+
+        .cards .salad .sob1 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+
+        }
+
+        .cards .pasta .sob2 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+        .cards .vegetables .sob3 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+        .cards .soup .sob4 {
+            width: 250px;
+            height: 100px;
+            margin-top: -105px;
+        }
+
+
+        .cards .salad,
+        .cards .pasta,
+        .cards .vegetables,
+        .cards .soup {
+            margin-left: 0;
+            margin-bottom: 12%;
+        }
+
+        .days1,
+        .days2,
+        .days3,
+        .days4 {
+            width: 450px;
+        }
+    }
+
+
+
+    /* RESPONSIVIDADE CELULAR*/
+    @media screen and (max-width: 767px) {
+
+
+        .middle,
+        .end {
+            width: 0;
+            visibility: hidden;
+        }
+
+        .login {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+
+        .main {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: auto;
+        }
+
+        .all {
+            font-size: small;
+            align-items: center;
+            text-align: center;
+        }
+
+        .yellow {
+            margin-top: 2rem;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box {
+            width: 90%;
+            height: auto;
+        }
+
+        .cards {
+
+            img {
+                width: 300px;
+                height: auto;
+            }
+
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+            margin-left: 25px;
+        }
+
+        .cards .salad .sob1 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .pasta .sob2 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .vegetables .sob3 {
+            width: 100px;
+            height: auto;
+        }
+
+        .cards .soup .sob4 {
+            width: 100px;
+            height: auto;
+        }
+
+
+        .cards .salad,
+        .cards .pasta,
+        .cards .vegetables,
+        .cards .soup {
+            margin-left: 0;
+            margin-bottom: 12%;
+        }
+
+        .instructions {
+
+            h1 {
+                font-size: 30px;
+                padding: 6x;
+            }
+
+            .icons {
+                margin-left: 0%;
+                flex-direction: column;
+                width: 90%;
+                padding: 2px;
+            }
+
+            .location,
+            .order,
+            .meals,
+            .pay {
+
+                img {
+                    width: 100px;
+                    height: auto;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -556,26 +823,31 @@ body {
 
 
 /*bia*/
- 
+
 .bia1 {
     background-color: rgb(251, 251, 234);
     display: flex;
     width: 100%;
     height: 540px;
 }
- 
+
 .search {
     color: #000000;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 18rem;
     padding-top: 3rem;
+
     position: absolute;
     h1 b{
         color:var(--Tittle);
     }
+
+
+
+
 }
- 
+
 .visao {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -584,7 +856,7 @@ body {
     margin-left: 115rem;
     position: relative;
 }
- 
+
 .bolinhas {
     background-color: var(--amarelo2);
     width: 4rem;
@@ -596,40 +868,59 @@ body {
     align-items: center;
     margin-left: 0.5%;
 }
- 
+
 .bolinhas img {
     justify-content: end;
     width: 20px;
 }
- 
+
 .imagens {
     display: flex;
     width: 3rem;
     gap: 50px;
     display: flex;
+
     margin-top: 8%;
     margin-left: 12%;
     position: absolute;
+
+    margin-top: 12%;
+    justify-content: flex-end;
+
+
 }
- 
+
 .imagens img {
     width: 250px;
     height: 250px;
     border-radius: 10rem;
 }
+
  
 .comidas {
+
+
+/* .comidas {
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     padding-top: 30rem;
     color: rgb(94, 93, 93);
     display: flex;
+
     position: relative;
     
 } 
  
  .bia2 {
     background-color: var(--amarelo2);
+
+ 
+} */
+
+.bia2 {
+    background-color: var(--fundoneutro);
+
     display: flex;
     width: 100%;
     height: 800px;
@@ -665,16 +956,17 @@ body {
 
 .ISADORA {
 
-    body{
-    background-color: white;
-}
+    body {
+        background-color: white;
+    }
 
     /* Card 1 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
 
     .card1 {
-        padding: 60px;
-        background-color: var(--fundo);
+        padding: 5%;
+        background-color: white;
     }
+
     /* a div mÃ£e, que contÃ©m as configuraÃ§Ãµes bÃ¡sicas de todos os outros cards (container = contÃ©m) */
     .container {
         width: 900px;
@@ -684,51 +976,51 @@ body {
         box-shadow: 3px 9px 75px 21px var(--sombra);
         -webkit-box-shadow: 3px 9px 75px 21px var(--sombra);
         -moz-box-shadow: 3px 9px 75px 21px var(--sombra);
-        
+
     }
-    
+
     /* O texto se adapta ao container, comfiguraÃ§Ãµes de texto para as escritas h1, p e geral.  */
     .texto {
         width: 50%;
         height: 100%;
         display: flex;
-        flex-direction:column ;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        
+
         h1 {
-            color:black;
+            color: black;
             font-weight: bold;
             font-size: 40px;
- 
+
         }
-        
+
         p {
-            font-size:16px;
+            font-size: 16px;
             margin-top: 15px;
             text-align: justify;
         }
-        
+
     }
-    
+
     /* configuraÃ§Ãµes de todas as imagens dos cards */
-    
+
     .imagem {
         width: 50%;
         height: 100%;
         display: flex;
-        
+
     }
-    
+
 
     /* utilizado para deixar textos isolados de outra cor */
     span {
         color: rgb(255, 208, 0);
         font-weight: bold;
     }
-    
-/* configuraÃ§Ãµes de todos os botÃµes */
+
+    /* configuraÃ§Ãµes de todos os botÃµes */
     .botao1 {
         margin: 60px;
         padding: 20px 60px;
@@ -738,43 +1030,107 @@ body {
         justify-content: center;
         border-radius: 10px;
         color: var(--detalhes);
-        box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
-        -webkit-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
-        -moz-box-shadow: 2px 22px 46px 2px rgba(255,165,0,0.58);
-        
-        
+        box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+        -webkit-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+        -moz-box-shadow: 2px 22px 46px 2px rgba(255, 165, 0, 0.58);
+
+
     }
-    
+
     /* ConfiguraÃ§Ãµes de cardÃ¡pio (botÃ£o)*/
     .Cardapio {
         text-align: center;
-        color:black;
+        color: black;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
-        
+
     }
- /* ConfiguraÃ§Ãµes de botÃ£o, animaÃ§Ãµes e efeitos de cor*/
-    .botao1:hover{
-        background-color:var(--detalhes2) ;
+
+    /* ConfiguraÃ§Ãµes de botÃ£o, animaÃ§Ãµes e efeitos de cor*/
+    .botao1:hover {
+        background-color: var(--detalhes2);
         transition: all 0.3s ease;
     }
-    
-     /* Card 2 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
-    .card2{
+
+    /* Card 2 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
+    .card2 {
         padding: 5%;
-        background-color: var(--fundo);
+        background-color: white;
     }
-    
-     /* Card 3 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
-    .card3{
+
+    /* Card 3 = correponde as configuraÃ§Ãµes dos blocos de imagem e texto (cartÃµes) */
+    .card3 {
         padding: 5%;
-        background-color: var(--fundo);
-    }   
-    
-  
+        background-color: white;
+    }  
+
+
+    /* Responsividade */
+
+
+@media (max-widht:767px) {
+    .card1 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card2 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
 }
- 
+
+@media (max-width:480px) {
+    .card1 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card2 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+    .card3 {
+    padding: 5%;
+    background-color: white;
+	display: flex;
+	justify-content: center;
+    flex-wrap: nowrap;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -784,59 +1140,60 @@ body {
 
 /*marcela*/
 
-.marcela{
+.marcela {
     background-color: rgb(36, 36, 36);
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
 
-    img{
-        width:100%;
+    img {
+        width: 100%;
         height: 200px;
         margin-top: 0%;
-        display: flex; ;
+        display: flex;
+        ;
     }
-    
-    
-   
+
+
+
 }
 
-p{
+p {
     color: rgb(151, 150, 150);
-    display: flex;
     justify-content: space-around;
 }
 
-h2{
+h2 {
     color: rgb(103, 103, 103);
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-direction: column;
     font-size: 20px;
-    
-}
-.titulo-rodape{
-   
-    
 
-    .primeiro{
+}
+
+.titulo-rodape {
+
+
+
+    .primeiro {
         display: flex;
         justify-content: space-around;
         align-content: center;
-    
+
     }
-    
-    
-    hr{
+
+
+    hr {
         width: 90%;
         opacity: 0.3;
         color: grey;
 
     }
-    
+
 }
 
-input{
+input {
     width: 300px;
     height: 40px;
     border-radius: 5px;
@@ -845,7 +1202,7 @@ input{
     padding: 10px;
     margin-left: 1000px;
     background-color: rgb(63, 63, 63);
-    
+
 
 }
 
@@ -863,8 +1220,9 @@ button {
     color: white;
     margin-left: 1350px;
 }
+
 .titulo-segundo{
-   .tres{
+   .tres {
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -872,7 +1230,19 @@ button {
     columns: 3;
     width: 50%;
     height: 200px;
+  }
+  }
 
-}
+.titulo-segundo {
+    .tres {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+        columns: 3;
+        width: 50%;
+        height: 200px;
+
+    }
 
 }
