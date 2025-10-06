@@ -612,7 +612,8 @@
 
 /*pietra*/
 
-.cabeca {
+.pietra {
+    .cabeca {
     background-color: var(--fundo);
     padding: 20px;
     text-align: center;
@@ -670,6 +671,8 @@
 
 .card-content {
     padding: 20px;
+    width: 50%;
+    height: 50%;
 }
 
 .tag {
@@ -787,7 +790,11 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    height: 70%;
+    height: 70%; 
+
+}
+
+
 }
 
 
