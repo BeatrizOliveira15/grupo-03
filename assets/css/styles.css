@@ -96,7 +96,7 @@
         padding-left: 6%;
         padding-top: 6%;
         background-color: #fcc70f;
-        width: 195.7vh;
+        width: 160vh;
         display: flex;
         justify-content: space-evenly;
         height: 100%;
@@ -785,20 +785,20 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 90%;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     height: 70%; 
+    margin-left: 5%;
+}
 
 }
 
-
+/*Resposividade Desktop*/
+@media screen and (min-width: 1200px) {
 }
-
-
-
 
 
 
@@ -818,9 +818,9 @@
 /*Título de search*/
 .search {
     color: rgb(43, 42, 42);
-    font-size: 10px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 12rem;
+    padding-left: 14rem;
     padding-top: 3rem;
     position: absolute;
 }
@@ -831,7 +831,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(252, 179, 23, 0.918);
     padding-top: 3rem;
-    padding-left: 70rem;
+    padding-left: 68rem;
     position: relative;
 }
 
@@ -872,17 +872,17 @@
     }
 
     img {
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
         border-radius: 10rem;
     }
 
 }
 
-/*Segunda div,  correspondente à parte de intalação*/
+/*Segunda div, correspondente a parte de intalação*/
 .bia2 {
     width: 100%;
-    height: 830px;
+    height: 800px;
     background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -892,10 +892,10 @@
 /*Card de informações*/
 .cardb {
     position: absolute;
-    width: 55%;
+    width: 60%;
     height: 18%;
-    margin-top: 50px;
-    margin-left: 23%;
+    margin-top: 80px;
+    margin-left: 20%;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 5px 20px rgba(250, 187, 50, 0.418);
@@ -906,30 +906,31 @@
     display: flex;
     flex-direction: row;
     width: 50%;
-    margin-left: 35px;
-    margin-top: 5px;
+    margin-left: 70px;
+    margin-top: 8px;
     gap: 30px;
 }
 
 /*Linha que separa o primeiro e o segundo ícone*/
 .icone01 {
     position: relative;
-    border-right:2px solid #e0d7d7;
-    height: 50%;
+    border-right:2.9px solid #d3c5c5;
+    height: 60px;
 }
 
 /*Linha que separa o segundo e o terceiro ícone*/
 .icone02 {
     position: relative;
-    border-right: 2px solid #e0d7d7;
+    border-right: 2.9px solid #d3c5c5;
+    height: 60px;
 }
 
 /*Informações sobre a instalação*/
 .install {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 60%;
-    padding-top: 20rem;
+    margin-left: 62%;
+    padding-top: 26rem;
 
     h1 {
         color: rgba(255, 166, 0, 0.918);
@@ -969,8 +970,139 @@
 .celular img {
     position: absolute;
     width: 33%;
-    top: 318px;
-    left: 340px;
+    top: 335px;
+    left: 330px;
+}
+
+/*Responsitividade Desktop*/
+    @media screen and (min-width: 1200px) {
+    .search {
+        padding-left: 5rem;
+    }
+    .visao {
+        padding-left: 60rem;
+    }
+    .imagens {
+        margin-left: 6%;
+    }
+    .cardb {
+        width: 70%;
+        height: 18%;
+        margin-top: 80px;
+        margin-left: 16%;
+    }
+    .icones {
+        margin-left: 50px;
+        gap: 60px;
+        margin-top: 20px;
+    }
+    .celular img {
+        width: 40%;
+        top: 360px;
+        left: 200px;
+    }
+    }
+
+
+/*Responsitividade Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .search {
+        display: flex;
+        padding-left: 3rem;
+    }
+
+    .visao {
+        display: flex;
+        padding-left: 35rem;
+    }
+
+    .imagens {
+        margin-left: 5%;
+        gap: 20px;
+        margin-top: 20%;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        h2 {
+            font-size: 10px;
+            margin-top: 20%;
+        }
+    }
+
+    .cardb {
+        width: 85%;
+        height: 18%;
+        margin-top: 80px;
+        margin-left: 10%;
+    }
+    .icones {
+        display: flex;
+        margin-left: 3px;
+        gap: 1px;
+        width: 1%;
+        margin-top: 15px;
+    }
+    .install {
+        font-size: 10px;
+    }
+    .celular img {
+        width: 50%;
+        top: 450px;
+        left: 70px;
+    }
+}
+
+/*Responsitividade Mobile*/
+@media screen and (max-width: 767px) {
+    .search {
+        display: flex;
+        padding-left: 3rem;
+        font-size: 10px;
+    }
+    .visao {
+        display: flex;
+        padding-left: 35rem;
+        font-size: 10px;
+    }
+    .imagens {
+        margin-left: 5%;
+        gap: 20px;
+        margin-top: 20%;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        h2 {
+            font-size: 10px;
+            margin-top: 20%;
+        }
+    }
+    .cardb {
+        width: 90%;
+        height: 18%;
+        margin-top: 80px;
+        margin-left: 5%;
+    }
+    .icones {
+        display: flex;
+        margin-left: 30px;
+        gap: 2px;
+        margin-top: 20px;
+    }
+    .install {
+        font-size: 10px;
+        margin-left: 60%;
+    }
+    .celular img {
+        width: 50%;
+        top: 450px;
+        left: 40px;
+}
 }
 
 
